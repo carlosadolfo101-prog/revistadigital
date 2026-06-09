@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Héroes del Tiempo | Revista Digital</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">★</span>
+      <div>
+        <h1>Héroes del Tiempo</h1>
+        <p>Revista digital interactiva</p>
+      </div>
+    </div>
+    <div class="progress-wrap" aria-label="Progreso de lectura">
+      <div id="progressBar"></div>
+    </div>
+  </header>
+
+  <main class="stage" aria-live="polite">
+    <button class="nav-btn left" id="prevBtn" aria-label="Página anterior">‹</button>
+    <section class="book-shell">
+      <div class="book" id="book">
+        <article class="page active" data-title="Portada">
+          <div class="paper-shine"></div>
+          <img src="assets/portada.png" alt="Portada" draggable="false" />
+        </article>
+        <article class="page" data-title="Diente de sable: portada interior">
+          <div class="paper-shine"></div>
+          <img src="assets/diente_1.jpg" alt="Diente de sable: portada interior" draggable="false" />
+        </article>
+        <article class="page" data-title="Diente de sable: datos curiosos">
+          <div class="paper-shine"></div>
+          <img src="assets/diente_2.jpg" alt="Diente de sable: datos curiosos" draggable="false" />
+        </article>
+        <article class="page" data-title="Evolución del automóvil: línea del tiempo">
+          <div class="paper-shine"></div>
+          <img src="assets/auto_1.jpg" alt="Evolución del automóvil: línea del tiempo" draggable="false" />
+        </article>
+        <article class="page" data-title="Evolución del automóvil: datos curiosos">
+          <div class="paper-shine"></div>
+          <img src="assets/auto_2.jpg" alt="Evolución del automóvil: datos curiosos" draggable="false" />
+        </article>
+        <article class="page" data-title="Thomas Alva Edison: legado">
+          <div class="paper-shine"></div>
+          <img src="assets/edison_1.jpg" alt="Thomas Alva Edison: legado" draggable="false" />
+        </article>
+        <article class="page" data-title="Thomas Alva Edison: datos curiosos">
+          <div class="paper-shine"></div>
+          <img src="assets/edison_2.jpg" alt="Thomas Alva Edison: datos curiosos" draggable="false" />
+        </article>
+        <article class="page" data-title="Guerreros aztecas: disciplina y valor">
+          <div class="paper-shine"></div>
+          <img src="assets/aztecas_1.jpg" alt="Guerreros aztecas: disciplina y valor" draggable="false" />
+        </article>
+        <article class="page" data-title="Guerreros aztecas: datos curiosos">
+          <div class="paper-shine"></div>
+          <img src="assets/aztecas_2.jpg" alt="Guerreros aztecas: datos curiosos" draggable="false" />
+        </article>
+      </div>
+      <div class="book-shadow"></div>
+    </section>
+    <button class="nav-btn right" id="nextBtn" aria-label="Página siguiente">›</button>
+  </main>
+
+  <footer class="controls">
+    <button id="firstBtn">Inicio</button>
+    <button id="prevSmall">Anterior</button>
+    <span id="pageIndicator">Página 1 de 9</span>
+    <button id="nextSmall">Siguiente</button>
+    <button id="lastBtn">Final</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
